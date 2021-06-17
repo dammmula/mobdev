@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ocean_main">#008751</color>
+    <color name="ocean_second">#009E5F</color>
+    <color name="ocean_main_night">#004227</color>
+    <color name="ocean_second_night">#00673F</color>
+    <color name="ocean_deep">#00190F</color>
+    <color name="ocean_dark">#005030</color>
+
+    <color name="cyber_main">#0EFFDB</color>
+    <color name="cyber_second">#D300C8</color>
+    <color name="cyber_main_night">#065E51</color>
+    <color name="cyber_second_night">#51004D</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="blue">#0088E3</color>
+    <color name="green">#07BD00</color>
+    <color name="brown">#AF7A4C</color>
+    <color name="grey">#8A8A8A</color>
+    <color name="red">#B53F3F</color>
+    <color name="purple">#7821F3</color>
+</resources>
