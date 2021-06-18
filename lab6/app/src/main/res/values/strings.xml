@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MobileProg</string>
+    <string name="title_main">Main</string>
+    <string name="title_lab2">Lab2</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_images">Images</string>
+
+
+    <string name="default_hint_title">Movie name</string>
+    <string name="warning_hint_title">SET MOVIE NAME</string>
+</resources>
