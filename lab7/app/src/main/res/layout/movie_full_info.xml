@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/fullTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="3"
+        android:text="Title"
+        android:textColor="@color/ocean_deep"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/h10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/v45"
+        app:layout_constraintStart_toStartOf="@+id/v5"
+        app:layout_constraintTop_toTopOf="@+id/bottom_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fullProduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Production"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/fullType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Type"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fullProduction" />
+
+                <TextView
+                    android:id="@+id/fullRated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rated"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullType" />
+
+                <TextView
+                    android:id="@+id/fullImdbRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="ImdbRating"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullRated" />
+
+                <TextView
+                    android:id="@+id/fullImdbVotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ImdbVotes"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintBottom_toBottomOf="@+id/fullImdbRating"
+                    app:layout_constraintStart_toEndOf="@+id/fullImdbRating"
+                    app:layout_constraintTop_toTopOf="@+id/fullImdbRating" />
+
+                <TextView
+                    android:id="@+id/fullReleased"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Released"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullImdbRating" />
+
+                <TextView
+                    android:id="@+id/fullRuntime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Runtime"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullReleased" />
+
+                <TextView
+                    android:id="@+id/fullGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Genre"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullRuntime" />
+
+                <TextView
+                    android:id="@+id/fullDirector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Director"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullGenre" />
+
+                <TextView
+                    android:id="@+id/fullWriter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Writer"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullDirector" />
+
+                <TextView
+                    android:id="@+id/fullActors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Actors"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullWriter" />
+
+                <TextView
+                    android:id="@+id/fullLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Language"
+                    android:textColor="@color/ocean_dark"
+                    app:layout_constraintStart_toStartOf="@+id/fullProduction"
+                    app:layout_constraintTop_toBottomOf="@+id/fullActors" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/v95"
+        app:layout_constraintStart_toStartOf="@+id/v5"
+        app:layout_constraintTop_toTopOf="@+id/fullPoster" />
+
+    <ImageView
+        android:id="@+id/fullPoster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/v95"
+        app:layout_constraintLeft_toLeftOf="@+id/v5"
+        app:layout_constraintRight_toRightOf="@+id/v45"
+
+
+        app:layout_constraintStart_toStartOf="@+id/v5"
+        app:layout_constraintTop_toTopOf="@+id/h10"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:id="@+id/scrollPlot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/v95"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/v48"
+        app:layout_constraintTop_toTopOf="@+id/bottom_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fullPlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:text="Plot"
+                android:textColor="@color/ocean_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
